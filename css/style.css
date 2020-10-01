@@ -1,0 +1,29 @@
+#error-msg {
+    color: red;
+    font-size: 12px;
+    padding: 2px;
+}
+
+body {
+    background: #ccc;
+}
+
+.form-container {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+div .input-disabled {
+    border: 1px solid rgba(148, 68, 68, 0.548);
+    color: rgba(148, 68, 68, 0.548);
+}
+
+div .input-disabled::placeholder {
+    color: rgba(148, 68, 68, 0.548);
+}
+
+.advanced-toggler {
+    /* color: rgba(39, 39, 209, 0.76); */
+    font-size: 12px;
+}
