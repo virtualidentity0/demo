@@ -1,0 +1,153 @@
+@import "./variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+ background: #006281;
+ font-family: $font-1;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    .cv-page{
+        box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.4);
+        .cv-row:nth-of-type(1){
+            display: grid;
+            grid-template-columns: 350px 600px;
+            grid-auto-rows: 1200px;
+       
+            .cv-column:nth-of-type(1){
+                background: #292C31;
+                display: grid;
+                grid-template-rows: 200px 30px 300px 30px;
+                padding: 20px;
+                .cv-column__row:nth-of-type(1){
+                    grid-row: 1;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    
+                    .cv__name{
+                        font-size: 2.1rem;
+                        font-weight: 600;
+                        color: white;
+                        text-transform: uppercase;
+                    }
+                    .cv__profession{
+                        color: #028798;
+                        font-size: 1.2rem;
+                        font-weight: 300;
+                        text-transform: uppercase;
+                    }
+                }
+                .cv-column__row:nth-of-type(2){
+                    grid-row: 3;
+                    display: grid;
+                    grid-template-rows: 30px 150px;
+                    row-gap: 25px;
+                    .row__header{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .header__text{
+                            color: #028798;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            font-size: 1.2rem;
+                        }
+                        .header__shape{
+                            display: flex;
+                            background: #03616B;
+                            height: 25px;
+                            width: 120px;
+                            position: relative;
+                            border: none;
+                            .shape-1{
+                                height: 25px;
+                                width: 70px;
+                                background: #028798;
+                                transform: skew(-25deg, 0);
+                                position: absolute;
+                                left: -5px;
+                            }
+                        }
+                    }
+                    .row__text{
+                        color: rgba(255, 255, 255, 0.555);
+                        font-size: 1.1rem;
+                    }
+                }
+                .cv-column__row:nth-of-type(3){
+                    display: grid;
+                    grid-template-rows: 50px 150px;
+                    row-gap: 25px;
+                    grid-row: 5;
+                    .row__header{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .header__text{
+                            color: #028798;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            font-size: 1.2rem;
+                        }
+                    }
+                            .content{
+                                display: grid;
+                                .row__content{
+                                    display: grid;
+                                    grid-template-columns: 40px 1fr;
+                                    column-gap: 20px;
+                                    align-items: center;
+                                    .icon{
+                                        font-size: 1.8rem;
+                                        color: rgba(255, 255, 255, 0.521);
+                                    }
+                                    .text {
+                                        color: rgba(255, 255, 255, 0.521);
+                                    }
+                                }
+                            }
+
+                }
+            }
+            .cv-column:nth-of-type(2){
+                background: white;
+                padding: 20px;
+         
+            }
+        }
+        .cv-row:nth-of-type(2){
+            height: 100px;
+            background:#028798;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .links {
+                width: 500px;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                .link__item{
+                    display: flex;
+                    align-items: center;
+                    i {
+                        font-size: 1.5rem;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
